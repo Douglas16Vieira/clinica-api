@@ -26,3 +26,16 @@ function buscarDados() {
         });
 
 }
+
+function AgendarConsulta {
+         const = dados { nome = nomeUs.value,
+            telefone = telCont.value,
+            horario = HDisponivel.value,
+            data = dataAgen.value
+         }
+
+         fetch('schedule', {
+             method: 'post',
+             body: json.stringify(dados)
+         })
+}
